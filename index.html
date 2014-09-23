@@ -23,42 +23,62 @@
 
             <article class="top">
 
-                <div class="logo"><img src="img/logo.png" class="logo" width="619" height="183" ></div>
-
-                
-
-                <div class="subtitle gravurthin">WE EXPERIMENT IN COMBINING <span class="red"> STORYTELLING &amp; TECHNOLOGY </span><br>TO CREATE EMOTIONAL EXPERIENCES</div>
+                <div class="logo"><img src="img/logo.png" width="619" height="183" ></div>
 
                 <div class="arrow"></div>
 
             </article>
+
+
+            <article class="top2">
+
+
+                <div class="subtitle gravurthin">WE EXPERIMENT IN COMBINING <span class="red"> STORYTELLING &amp; TECHNOLOGY </span><br>TO CREATE EMOTIONAL EXPERIENCES</div>
+
+                
+
+             </article>
+
+            
             
 
 
 
 
             <article class="selectedworks">
-
                 
+                  
+          
                 <section class="selected first">
+                    <div class="projecttitle gravurthin white">Gaga Doll</div>
                     <img src="img/gagadoll.png" alt="Gagadoll" style="width:100%;">
                     
+
+                    
                 </section>
+          
 
-
+      
                 <section class="selected second">
+                    <div class="projecttitle gravurthin white">Cut Copy Explorers</div>
                     <img src="img/cutcopy.png" alt="Cut Copy" style="width:100%;">
+                
                    
-                </section>
+                </section>  
+
 
 
                 <section class="selected third">
+                    <div class="projecttitle gravurthin">Focus Life Gear</div>
                     <img src="img/focusgear.png" alt="Focus Life Gear" style='width:100%;'>
+                    
                     
                 </section>
 
                 <section class="selected fourth">
+                    <div class="projecttitle gravurthin">Sad Tweets</div>
                     <img src="img/sadtweets.png" alt="Sad Tweets" style='width:100%;'>
+                    
                     
                 </section>
 
@@ -89,25 +109,24 @@
         <script type="text/javascript" src="js/script.js"></script>
         <script>
 
-        // $(function(){
+        $(function(){
 
-        //     $(window).scroll(function() {
-        //         var logo = $('.logo');
-        //         logo.hide();
+            var windowheight = $(window).height();
+            var halfpage = windowheight / 2 - 91;
+            console.log(windowheight);
+
+            var top = $(".top");
+            var logo = $(".logo");
+            var arrow = $(".arrow")
+
+
+            top.css ({ height: windowheight });
+            logo.css({ "padding-top": halfpage });
+            // arrow.css({ bo: windowheight })
 
 
 
-        //         var $myDiv = $('#myDiv');
-        //         var st = $(this).scrollTop();
-        //         $myDiv.height( st );
-        //         if( st == 0 ) {
-        //             $myDiv.hide();
-        //         } else {
-        //             $myDiv.show();
-        //         }
-        //     }).scroll();
-
-        // })
+        })
 
 
 
@@ -120,5 +139,22 @@
 
 
 
+<!--             $(window).scroll(function() {
+                var logo = $('.logo');
+                logo.hide();
 
+
+
+                var $myDiv = $('#myDiv');
+                var st = $(this).scrollTop();
+                $myDiv.height( st );
+                if( st == 0 ) {
+                    $myDiv.hide();
+                } else {
+                    $myDiv.show();
+                }
+            }).scroll();
+
+
+ -->
 
