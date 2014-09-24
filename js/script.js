@@ -21,17 +21,20 @@ $(function(){
 
     	logo.css({ 'webkit-transform' : 'scale('+ scale + ')' });
 
-    });
-
-
-	$(window).scroll(function(){
-
 		var subsc = Math.max(- $(window).scrollTop() / 0.7, -300 )
 		subtitle.css('margin-top', subsc );
 		
 		console.log(- $(window).scrollTop() / 0.7);
+		arrow.hide();
 
-	});
+		});
+
+
+
+	// $(window).scroll(function(){
+
+
+	// });
 
 
 

@@ -1,3 +1,12 @@
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
 
 .top2 {
 	height: 100%;
@@ -49,8 +58,9 @@
 	line-height: 106px;
 	position: absolute;
 	bottom: 50px;
-	left: 160px;
+	left: 200px;
 	color: #5A5A5A;
+	text-transform: uppercase;
 }
 
 
@@ -62,6 +72,35 @@
 	background-color: red;	
 	position: relative;
 }
+
+.boxleft {
+	width: 360px;
+	margin-top: 55px;
+	/*background-color: blue;*/
+	float: left;
+	z-index: 100;
+	position: absolute;
+	text-align: right;
+	line-height: 28px;
+	font-size: 20px;
+	color: rgba(255,255,255,0.40);
+}
+
+
+.boxright {
+	position: absolute;
+	width: 360px;
+	margin-top: 55px;
+	/*background-color: gray;*/
+	float: left;
+	left: 405px;
+	line-height: 28px;
+	font-size: 20px;
+	color: white;
+
+}
+
+
 
 .white {
 	color: white;
@@ -88,8 +127,6 @@
 
 
 
-
-
 /*******************************************
 
 				F O N T S
@@ -98,15 +135,27 @@
 
 
 
-
-
 .gravurthin {
 	font-family: GravurCondensed-Thin;
+}
+
+.gravurregular {
+	font-family: GravurCondensed-Regular;
 }
 
 .red {
 	color: red;
 }
+
+.darkgray {
+	color: #333333;
+}
+
+.darkgraytransparant {
+	color: rgba(0,0,0,0.50);
+}
+
+
 
 @font-face {
   font-family: 'GravurCondensed-Thin';
