@@ -6,70 +6,43 @@ $(function(){
 
     var top = $(".top");
     var logo = $(".logo");
-    var arrow = $(".arrow")
+    var arrow = $(".arrow");
+    var subtitle = $('.subtitle');
 
     top.css ({ height: windowheight });
     logo.css({ "padding-top": halfpage });
-    // arrow.css({ bo: windowheight })
+
+	$(window).on("scroll", function(){
+
+    	var st = $(document).scrollTop();
+    	var sc = (-0.9/500) * st + 1
+    	var scale = Math.max(sc, 0.59);
+    	console.log(sc);
+
+    	logo.css({ 'webkit-transform' : 'scale('+ scale + ')' });
+
+    });
+
+
+	$(window).scroll(function(){
+
+		var subsc = Math.max(- $(window).scrollTop() / 0.7, -300 )
+		subtitle.css('margin-top', subsc );
+		
+		console.log(- $(window).scrollTop() / 0.7);
+
+	});
 
 
 
 
 
-
-    docHeight = document.documentElement.offsetHeight;
-    console.log(docHeight);
-
-	  
-	  window.addEventListener( 'scroll', function() {
-	        // normalize scroll position as percentage
-	    var scrolled = window.scrollY / ( docHeight - window.innerHeight ),
-	        transformValue = 'scale('+scrolled+')';
-
-	    logo.css({
-
-
-	     })
-
-	    logo.style.WebkitTransform = transformValue;
-	    logo.style.MozTransform = transformValue;
-	    logo.style.OTransform = transformValue;
-	    logo.style.transform = transformValue;
-	    
-	  }, false);
-	  
-
-
-
-
- //   	console.log($(document).scrollTop());
-
- //    $(window).on("scroll", function() {
- //    	var sw = Math.min(322, $(document).scrollTop()) + 100;
- //    	var sh = Math.min(95, $(document).scrollTop()) + 100;
-
- //    	logo.width(sw).height(sh);
-	// });
-
-
-
-
-
-	   //  $(window).on("scroll", function(){
-
-    // 	var st = $(document).scrollTop();
-    // 	var sc = (-0.9/500) * st + 1
-    // 	var scstr = 'scale('+ sc + ')'
-    // 	console.log(sc)
-
-    // 	logo.css({
-    //    		'webkit-transform' : scstr
-    // 	});
-
-
-    // });
 
 
 
 
 })
+
+
+
+

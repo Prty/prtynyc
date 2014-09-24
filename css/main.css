@@ -1,5 +1,8 @@
-.top {
-	/*background-color: red;*/
+
+.top2 {
+	height: 100%;
+	width: 100%;
+	margin-top: 100px;
 }
 
 
@@ -8,8 +11,8 @@
 	height: 183px;
 	margin: 0 auto;
 	/*background-color: orange;*/
-
 }
+
 
 .arrow {
     width: 26px;
@@ -22,30 +25,22 @@
 	border-bottom: 2px solid #979797;
 	border-right: 2px solid #979797;
 	cursor: pointer;
-	
 	position: absolute;
 	bottom: 35px;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
 	right: 0;
-
-
-	/*margin-top: 50px;*/
-/*	position: absolute;
-	bottom: 50px;
-	left: 50%;
-	margin-left: -13px;*/
 }
+
 
 .subtitle {
 	margin: 0 auto;
 	text-align: center;
-	margin-top: 150px;
 	font-size: 48px;
-	line-height: 53px; 
 	color: #666666;
-	width: 900px;
+	width: 100%;
+	margin-bottom: 180px;
 }
 
 
@@ -65,7 +60,6 @@
 	height: 500px;
 	overflow: hidden;
 	background-color: red;	
-	/*border: 1px solid black;*/
 	position: relative;
 }
 
@@ -81,9 +75,8 @@
 	text-transform: uppercase;
 	font-size: 35px; 
 	line-height: 35px;
-	/*padding-top: 75px;*/
-	/*padding-left: 20px;*/
 }
+
 
 .viewall {
 	padding-left: 120px;
