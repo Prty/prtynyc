@@ -28,8 +28,6 @@ $(function(){
 
 
 
-
-
 	
 	// POSITION HEADER ON TOP 0
 
@@ -40,6 +38,18 @@ $(function(){
 			'top' : 0
 		});
 
+	});
+
+
+
+
+	// SET HEIGHT CEDITS DIV
+
+	var creditsHeight = $('.creditsleft').height();
+	console.log(creditsHeight);
+
+	$('.credits').css({
+		'height' : creditsHeight + 30
 	});
 
 

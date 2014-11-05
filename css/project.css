@@ -1,19 +1,14 @@
 header {
 	top: 0;
 	position: relative;
-
 }
-
 
 .image {
 	width: 100%;
 	height: 580px;
 	overflow: hidden;
-	/*background-color: red;	*/
 	position: relative;
 }
-
-
 
 .itemtitle {
 	margin: 320px 0px 30px 200px;
@@ -42,9 +37,8 @@ header {
 
 .textblock {
 	margin: 100px 140px 0px 200px;
-	/*background-color: red;*/
-
 }
+
 
 .projectblurb {
 	margin-bottom: 30px;
@@ -61,23 +55,28 @@ header {
 	line-height: 20px;
 	width: 380px;
 	height: auto;
-	/*background-color: red;*/
 	margin-bottom: 100px;
 }
 
 
+
+/*******************************************
+
+			C R E D I T S
+
+*******************************************/
+
+
+
 .credits {
 	width: 250px;
-	height: auto;
-	/*background-color: red;*/
 	line-height: 20px;
 	color: #666666;
 	font-size: 12px;
-	margin: 90px 0px 350px 200px;
-	/*border: 2px solid red;*/
+	margin: 90px 0px 125px 200px;
+	/*background-color: blue;*/
 
 }
-
 
 .creditstitle {
 	width: 100%;
@@ -96,10 +95,19 @@ header {
 }
 
 
+/*******************************************
+
+		  N E X T P R O J E C T
+
+*******************************************/
+
+
+
+
 .nextproject {
-	height: 185px;
+	height: 130px;
+	padding-top: 65px;
 	width: 100%;
-	/*background-color: gray;*/
 	background: url( ../img/focusgear.png ) no-repeat 1% 1% scroll;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
@@ -108,27 +116,48 @@ header {
 }
 
 
-.nextcta {
-	margin: 100px 0px 0px 200px;
-	/*margin-left: 200px;*/
+.next {
+	float: left;
+	/*background-color: blue;*/
+	width: 100%;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.next-top {
+	/*background-color: orange;*/
+	margin-left: 200px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	line-height: 16px;
+	float: left;
+	width: 100%;
 
 }
+
+
+.next-bottom {
+	/*background-color: red;*/
+	float: left;
+	margin-left: 131px;
+	display: inline-block;
+	width: 100%;
+}
+
+.leftarrowproject {
+	float: left;
+	position: relative;
+	top: -1px;
+}
+
 
 .nexttitle {
-	margin-left: 200px;
+	float: left;
+	font-size: 32px;
+	line-height: 35px;
+	margin-left: 22px;
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
