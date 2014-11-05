@@ -1,0 +1,65 @@
+header {
+	top: 0;
+	position: relative;
+
+}
+
+
+.innertext {
+	display: block;
+	background-color: rgba(0,0,0,0.60);
+	width: 100%;
+	height: 100%;
+	line-height: 18px;
+}
+
+.workblock {
+	background-color: gray;
+	float: left;
+	font-size: 12px;
+	position: relative;
+	cursor: pointer;
+	margin: 0;	
+}
+
+
+.workboxleft {
+	/*margin-top: 45px;*/
+	position: absolute;
+	left: 30px;
+	top: 50px;
+	/*background-color: blue;*/
+	float: left;
+	z-index: 100;
+	text-align: right;
+	color: rgba(255,255,255,0.40);
+}
+
+
+.workboxright {
+	position: absolute;
+	left: 60px;
+	top: 50px;
+	/*background-color: gray;*/
+	float: left;
+	margin-left: 20px;
+	color: white;
+}
+
+
+.workblocktitle {
+	position: absolute;
+	top: 125px;
+	left: 30px;
+	font-size: 36px;
+	line-height: 40px;
+	color: #FFFFFF;
+	float: left;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,138 @@
+header {
+	top: 0;
+	position: relative;
+
+}
+
+
+.image {
+	width: 100%;
+	height: 580px;
+	overflow: hidden;
+	/*background-color: red;	*/
+	position: relative;
+}
+
+
+
+.itemtitle {
+	margin: 320px 0px 30px 200px;
+	font-size: 64px;
+	line-height: 70px;	
+}
+
+
+.leftarrowproject {
+	position: relative;
+	top: 5px;
+}
+
+
+.itemcta {
+	margin-left: 138px;
+	font-size: 32px;
+	line-height: 35px;
+}
+
+
+.cta {
+	padding-left: 10px;
+}
+
+
+.textblock {
+	margin: 100px 140px 0px 200px;
+	/*background-color: red;*/
+
+}
+
+.projectblurb {
+	margin-bottom: 30px;
+	font-size: 32px;
+	line-height: 38px;
+	color: #666666;
+	text-transform: uppercase;
+}
+
+
+.projecttext {
+	font-size: 14px;
+	color: #666666;
+	line-height: 20px;
+	width: 380px;
+	height: auto;
+	/*background-color: red;*/
+	margin-bottom: 100px;
+}
+
+
+.credits {
+	width: 250px;
+	height: auto;
+	/*background-color: red;*/
+	line-height: 20px;
+	color: #666666;
+	font-size: 12px;
+	margin: 90px 0px 350px 200px;
+	/*border: 2px solid red;*/
+
+}
+
+
+.creditstitle {
+	width: 100%;
+	height: auto;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-bottom: 7px;
+}
+
+.creditsleft {
+	float: left;
+}
+
+.creditsright {
+	float: right;
+}
+
+
+.nextproject {
+	height: 185px;
+	width: 100%;
+	/*background-color: gray;*/
+	background: url( ../img/focusgear.png ) no-repeat 1% 1% scroll;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+
+.nextcta {
+	margin: 100px 0px 0px 200px;
+	/*margin-left: 200px;*/
+
+}
+
+.nexttitle {
+	margin-left: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+header {
+	top: 0;
+	position: relative;
+
+}
+
+.wrapper {
+	width: 80%;
+	height: 800px;
+	background-color: red;
+	margin: 0 auto;
+
+}

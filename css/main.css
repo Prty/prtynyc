@@ -1,17 +1,87 @@
+
+
 a {
 	text-decoration: none;
+	color: black;
 }
 
 ul {
 	list-style-type: none;
 	padding: 0;
+	margin: 0;
 }
 
+
+
+/*******************************************
+
+				H E A D E R 
+
+*******************************************/
+
+
+header {
+	width: 100%;
+	height: 80px;
+	/*display: none;*/
+	position: fixed;
+	top: -85px;
+	z-index: 10000;
+	background-color: white;
+}
+
+.smalllogo {
+	float: left;
+	width: 140px;
+	height: 42px;
+	margin-top: 19px;
+	margin-left: 42px;
+}
+
+.menu {
+	width: 310px;
+	height: 100%;
+	float: right;
+	text-transform: uppercase;
+	font-size: 13px;
+	color: black;
+	line-height: 16px;
+}
+
+.menu ul {
+	margin-top: 34px;
+}
+
+.menu li {
+	display: inline;
+	padding-right: 40px;
+}
+
+.menu a {
+	color: black;
+}
+
+
+
+/*******************************************
+
+			L A N D I N G S P A G E 
+
+*******************************************/
+
+
+
+.top {
+	background-color: white;
+	z-index: 50;
+}
 
 .top2 {
 	height: 100%;
 	width: 100%;
 	margin-top: 100px;
+	background-color: white;
+	z-index: 50;
 }
 
 
@@ -64,14 +134,15 @@ ul {
 }
 
 
-
 .selected {
 	width: 100%;
 	height: 500px;
 	overflow: hidden;
-	background-color: red;	
+	/*background-color: red;	*/
 	position: relative;
+
 }
+
 
 .boxleft {
 	width: 360px;
@@ -97,14 +168,9 @@ ul {
 	line-height: 28px;
 	font-size: 20px;
 	color: white;
-
 }
 
 
-
-.white {
-	color: white;
-}
 
 .allwork {
 	height: 185px;
@@ -117,34 +183,143 @@ ul {
 }
 
 
-.viewall {
-	padding-left: 120px;
-	padding-top: 77px;
+.leftarrow {
+	margin-left: 139px;
+	margin-top: 75px;
+	float: left;
+
 }
 
+.viewall {
+	float: left;
+	margin-top: 77px;
+	padding-left: 20px;
 
+}
 
 
 
 
 /*******************************************
 
-				F O N T S
+   				F O O T E R
 
 *******************************************/
 
 
 
-.gravurthin {
-	font-family: GravurCondensed-Thin;
+footer {
+	height: 268px;
+	width: 100%;
+	font-size: 13px;
+	position: relative;
+	/*background-color: red;*/
+	float: left;
 }
 
-.gravurregular {
-	font-family: GravurCondensed-Regular;
+
+.footerleft {
+	width: 162px;
+	height: 85px;
+	/*background-color: yellow;*/
+	float: left;
+	margin-left: 141px;
+	margin-top: 60px;
 }
+
+
+.leftfloat {
+	float: left;
+	text-align: left;
+	text-transform: uppercase;
+	/*background-color: red;*/
+	color: rgba(0,0,0,0.40);
+}
+
+
+.rightfloat {
+	text-align: left;
+	float: right;
+	text-transform: uppercase;
+	/*background-color: red;*/
+	line-height: 16px;
+}
+
+.rightfloat ul li:last-child {
+	padding-top: 10px;
+	text-transform: lowercase;
+	color: rgba(0,0,0,0.40);
+	line-height: 15px;
+}
+
+.rightfloat a {
+	color: rgba(0,0,0,0.40);
+}
+
+
+.fixedwidth {
+	width: 115px;
+	/*background-color: gray;*/
+	/*padding-left: 50px;*/
+	float: left;
+}
+
+.block1 {
+	margin-left: 20px;
+}
+
+.block2 {
+	margin-left: 45px;
+}
+
+.footerright {
+	width: 340px;
+	height: 85px;
+	margin-left: 141px;
+	margin-top: 60px;
+	/*background-color: blue;*/
+	float: left;
+}
+
+.footerbottom {
+	width: 80%;
+	height: 85px;
+	margin-left: 141px;
+	margin-top: 60px;
+	/*background-color: red;*/
+	float: left;
+}
+
+.social {
+	margin-top: 7px;
+}
+
+.socialicons {
+	float: left;
+	margin-left: 20px;
+}
+
+.socialicons img:last-child {
+	margin-left: 5px;
+}
+
+
+
+
+/*******************************************
+
+   		F O N T S, C O L O R S 
+
+*******************************************/
+
+
 
 .red {
 	color: red;
+}
+
+.white {
+	color: white;
 }
 
 .darkgray {
@@ -155,6 +330,23 @@ ul {
 	color: rgba(0,0,0,0.50);
 }
 
+.gravurthin {
+	font-family: GravurCondensed-Thin;
+}
+
+.gravurregular {
+	font-family: GravurCondensed-Regular;
+}
+
+.gravurbold {
+	font-family: GravurCondensed-Bold;
+
+}
+
+.sabonbold {
+	font-family: sabonbold;
+
+}
 
 
 @font-face {
@@ -180,4 +372,35 @@ ul {
   font-style:   normal;
   font-weight:  400;
 }
+
+@font-face {
+  font-family: 'GravurCondensed-Bold';
+  src: url('GravurCondensed-Bold.eot'); /* IE9 Compat Modes */
+  src: url('GravurCondensed-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('GravurCondensed-Bold.woff') format('woff'), /* Modern Browsers */
+       url('GravurCondensed-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('GravurCondensed-Bold.svg#9c8be81aefa82b708522e30f595cd9d7') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: 'sabonbold';
+  src: url('SabonLTStd-Bold.eot'); /* IE9 Compat Modes */
+  src: url('SabonLTStd-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('SabonLTStd-Bold.woff') format('woff'), /* Modern Browsers */
+       url('SabonLTStd-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('SabonLTStd-Bold.svg#70ee491c7f6360e9684699aa507e5d7d') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  700;
+}
+
+
+
+
+
+
+
 
