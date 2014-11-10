@@ -9,7 +9,21 @@
 	var windowWidth = $(window).width();
 	var devideThree = windowWidth / 3;
 	var devideFour = windowWidth / 4;
-	console.log(devideThree);
+	var header = $('.header');
+
+
+
+	//
+
+	$('.window').on('scroll', function(){
+		header.css({
+			'position' : 'fixed',
+			'top' : '0'
+		});
+
+
+	});
+
 
 
 	// PLACE BLOCKS BASED ON WINDOW WIDTH

@@ -1,13 +1,35 @@
 header {
 	top: 0;
-	position: relative;
+	/*background-color: red;*/
+}
+
+
+.members {
+	height: auto;
+	margin: 140px 90px 30px 200px;
+	float: left;
+	max-width: 910px;
+	font-size: 13px;
+	
+}
+
+
+.member {
+	width: 150px;
+	height: 380px;
+	float: left;
+	margin: 0px 20px 40px 0px; 
+}
+
+
+.name {
+	margin: 8px 0px 8px 0px;
 
 }
 
-.wrapper {
-	width: 80%;
-	height: 800px;
-	background-color: red;
-	margin: 0 auto;
+.title {
+	margin-bottom: 80px;
+	line-height: 17px;
 
 }
+

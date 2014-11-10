@@ -1,0 +1,119 @@
+header {
+	top: 0;
+	/*position: relative;*/
+}
+
+
+.topblock {
+	max-width: 600px;
+	height: auto;
+	/*background-color: red;*/
+	margin: 190px 0px 90px 200px;
+}
+
+.contactheader {
+	/*margin-left: 200px;*/
+	font-size: 32px;
+	color: #666666;
+	line-height: 38px;
+	margin-bottom: 10px;
+
+}
+
+.contactcta {
+	font-size: 32px;
+	color: rgba(0,0,0,0.40);
+	line-height: 35px;
+	position: relative;
+	right: 59px;
+}
+
+.arrowleftcontact{
+	position: relative;
+	top: 6px;
+}
+
+.addresslarge {
+	width: 105px;
+	/*height: auto;*/
+	/*background-color: orange;*/
+	margin-left: 200px;
+
+}
+
+.addresstitle {
+	font-size: 13px;
+	color: #000000;
+	line-height: 16px;
+	margin-bottom: 7px;
+	text-transform: uppercase;
+}
+
+.addressrest {
+	font-size: 13px;
+	color: rgba(0,0,0,0.40);
+	line-height: 16px;
+	margin-bottom: 20px;
+}
+
+/*#map {
+	background-color: red;
+	height: 300px;
+	width: 100%;
+}*/
+
+.address_largemap {
+	width: 940px;
+	height: 456px;
+	/*margin: 0 auto;*/
+	/*margin-left: 200px;*/
+	margin-bottom: 95px;
+}
+
+
+.addressblock {
+	width: 107px;
+}
+
+.address_small {
+	/*margin-left: 200px;*/
+	width: 440px;
+	height: auto;
+	/*background-color: orange;*/
+	float: left;
+	/*border: 1px solid black;*/
+	margin-bottom: 130px;
+
+}
+
+
+.address_small:last-child {
+	margin-left: 57px;
+}
+
+.address_smallmap {
+	width: 400px;
+	height: 400px;
+}
+
+.bottomblock {
+	margin-left: 200px;
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
