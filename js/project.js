@@ -64,7 +64,8 @@ $(function(){
 			var embed = $(embedCode);
 			embed.addClass("ytvideo");
 
-			$("#overlay").append(embed);
+			// $("#overlay").append(embed);
+			$("body").append(embed);
 
 			var closeBtn = "<img src='/wp-content/themes/prtynyc/img/closebutton.png' class='close_btn'>"
 			$("#overlay").append(closeBtn);
@@ -72,6 +73,7 @@ $(function(){
 			$(document.body).addClass("no_scroll");
 
 			var hideVideo = function(e){
+				embed.remove();
 				$(document.body).removeClass("no_scroll");
 			  	$("#overlay").fadeOut(500, function(){
 			  		$("#overlay").remove();
