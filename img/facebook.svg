@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="5-Project-Template" sketch:type="MSArtboardGroup" transform="translate(-242.000000, -2842.000000)" fill="#999999">
+            <g id="Footer" sketch:type="MSLayerGroup" transform="translate(0.000000, 2646.000000)">
+                <g id="facebook" transform="translate(242.000000, 196.000000)" sketch:type="MSShapeGroup">
+                    <path d="M3.00138694,0 C1.3437667,0 0,1.34308127 0,3.00138694 L0,18.9986131 C0,20.6562333 1.34308127,22 3.00138694,22 L18.9986131,22 C20.6562333,22 22,20.6569187 22,18.9986131 L22,3.00138694 C22,1.3437667 20.6569187,0 18.9986131,0 L3.00138694,0 Z M12.3084525,22 L12.3084525,12.4301848 L10.33305,12.4301848 L10.33305,9.13224482 L12.3084525,9.13224482 L12.3084525,7.15217359 C12.3084525,4.46171936 13.4238883,2.86186363 16.5929734,2.86186363 L19.2313254,2.86186363 L19.2313254,6.16017714 L17.5821686,6.16017714 C16.3485224,6.16017714 16.2669143,6.62106705 16.2669143,7.4812206 L16.2624324,9.13187133 L19.25,9.13187133 L18.9004109,12.4298113 L16.2624324,12.4298113 L16.2624324,22 L12.3084525,22 Z" id="Rectangle-49"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
