@@ -60,8 +60,9 @@ $(function(){
 
 
 		$('#overlay').hide().fadeIn(500, function(){
-			var src = $('.videocta').attr('data-videourl');
-			var embed = '<iframe class="ytvideo" src="'+ src + "?autoplay=1" +'" frameborder="0" allowfullscreen></iframe>';	
+			
+			var embed = $(embedCode);
+			embed.addClass("ytvideo");
 
 			$("#overlay").append(embed);
 

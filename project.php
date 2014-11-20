@@ -21,8 +21,14 @@
         </h1>
 
         <?php if(get_field('work_use_video')): ?>
+
+        <script type="text/javascript">
+          embedCode = '<?php the_field('work_embed_source');?>' ;
+        </script>
+
+
         <p class="itemcta gravurthin">
-          <a href="#" class="videocta <?php echo($class); ?>" data-videourl="<?php the_field('work_video_url');?>">
+          <a href="#" class="videocta <?php echo($class); ?>">
           <img class="leftarrowproject" src="<?php echo($arrowFile); ?>" width="44" height="35"> WATCH VIDEO
           </a>
         </p>
