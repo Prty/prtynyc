@@ -1,171 +1,155 @@
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	isMobile = true;
+}else{
+	isMobile = false;
+}
+
+
 $(function(){
 
 
-	var top = $(".top");
+	var top = $("#intro");
 	var logo = $(".logo");
 	var arrow = $(".arrow");
 	var subtitle = $('.subtitle');
 	var windowheight = $(window).height();
-	var logohalf = windowheight / 2 - 91;
-	var submar = windowheight / 2 - 92;
+
+	var logohalf = windowheight / 2 - logo.height()/2;
 	var header = $("header");
 	var selected = $('.selected');
 	var navVis = false;
-
-	
 
 	// LANDING PAGE POSITION ELEMENTS
 
 	top.css ({ height: windowheight });
 	logo.css({ "padding-top": logohalf });   
-	subtitle.css({ "margin-bottom" : submar });
 
 	
-	$(window).on("scroll", function(){
+	// SCROLL EFFECT
 
-		// LANDING PAGE SCROLL
-
+	scroll = function(e){
 		var st = $(document).scrollTop();
-		var sc = (-0.9/500) * st + 1;
 
-		if ( sc > 0.649 ) {
-			logo.css({ 'webkit-transform' : 'scale(' + sc + ')' + 'translateY(' + st + 'px)' });
-		}
+		if(!isMobile){
 
-		else {   
-		}
+			// LANDING PAGE SCROLL
+			var minScale = 0.649;
+			var sc = (-0.3/600) * st + 1;
+			sc = Math.max(sc, minScale);
 
-		var subsc = Math.max(- $(window).scrollTop() / 0.7, -300 )
-		subtitle.css('margin-top', subsc );
-		arrow.hide();
-		console.log(st);
+			var minTranslateY = 600;
+			var ty = Math.min(st, minTranslateY);
 
+			logo.css({ '-webkit-transform' : 'scale(' + sc + ')' + 'translateY(' + ty + 'px)' });
+			logo.css({ '-moz-transform' : 'scale(' + sc + ')' + 'translateY(' + ty + 'px)' });
+			logo.css({ '-o-transform' : 'scale(' + sc + ')' + 'translateY(' + ty + 'px)' });
+			logo.css({ '-ms-transform' : 'scale(' + sc + ')' + 'translateY(' + ty + 'px)' });
+			logo.css({ 'transform' : 'scale(' + sc + ')' + 'translateY(' + ty + 'px)' });
+
+			var a = Math.max( 1-st*0.01, 0);
+			arrow.css({'opacity':a});			
+
+		} 
 
 		// HEADER APPEAR 
-
 		if ( st < 50  && navVis ) {
 			navVis = false;
 			header.stop().animate({
 				top: '-85'
-			}, 100)
+			}, 200)
+
+			if(history.pushState) {
+			    history.pushState(null, null, '#');
+			} else {
+				window.location.hash = ""
+			}
+			return false;
 		}
 
-		else if ( st > 900 && !navVis ) {
+		else if ( $('#top').position().top-st <= 0  && !navVis ) {
 			navVis = true;
 			header.stop().animate({
 				top: '0'
-			}, 100);
+			}, 200);
+			arrow.show();
+			if(history.pushState) {
+			    history.pushState(null, null, '#top');
+			} else {
+				window.location.hash = "top"
+			}
+			return false;
 		}
-	});
 
 
-	// FULL SCREEN IMAGES IN SELECTED WORKS 
+	}
 
-	selected.each(function(){
+	scroll();
+	$(window).on( "scroll", scroll );
+
+
+	// FULL SCREEN IMAGES IN SELECTED WORKS and hover effect
+
+	$('section#selectedworks>a').each(function(){
+
+		var div = $(this);
 		var path = $(this).attr('data-background');
-		$(this).css({
-		    'background': "url(" + path + ")" + "no-repeat 50% 50% scroll",
-		    'background-size' : "cover",
-		    '-webkit-background-size' : 'cover',
-		    'width': '100%'
+		var img = '<img src="'+ path +'">';
+		div.animate({opacity:0},0);
+
+		$(img).load(function(){
+			div.css({
+			    'background': "url(" + $(this).attr('src') + ")" + "no-repeat 50% 50% scroll",
+			    'background-size' : "cover",
+			    '-webkit-background-size' : 'cover'
+			});
+			div.animate({opacity:1},1000);
 		});
+
+		if(!isMobile){
+			$('article', this).hide();
+
+			$(this).hover(
+				function(){
+					$('article', this).fadeIn();
+				},
+				function(){
+					$('article', this).fadeOut();
+				}
+			);
+		}
+
+
 	});
 
+
+	//Layout
+	layout = function(e){
+		var w = $(window).width();
+		var h = $(window).height();
+
+
+		logo.css({ "padding-top": h/2 - $('.logo').height()/2 }); 
+
+
+		if(w<=480){
+			$('section#selectedworks>a').height(h*0.3);
+		}else{
+			$('section#selectedworks>a').height(h*0.49);
+		}
+
+	}
+
+	setTimeout(function(){
+		layout();
+	}, 100 );
+
+	$(window).on('resize', layout);
 
 
 
 
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// <a href="#" class="projecttitle gravurthin white">
-//     <section class="selected first " data-background="img/gagadoll.png">
-//         <dl>
-//             <dt>DATE</dt>
-//             <dd>December 2014</dd>
-//             <dt>TYPE</dt>
-//             <dd>Product Design</dd>
-//             <dt>CLIENT</dt>
-//             <dd>Warner Music Japan</dd>
-//         </dl>
-//         <h1>Gaga Doll</h1>
-//     </section>
-// </a>
-
-
-// var path = $('section.first').attr('data-background');
-// $('section.first').css({
-//     'background': path + "no-repeat center center scroll"
-//     'background-size' : "cover"
-//     'width': '100%'
-// })
-
-
-
-
-
-
-
-		// IMG IN SELECTED DIVS STRETCH WITH OR HEIGHT
-
-		// console.log(selected.height());
-		// console.log($(window).width());
-
-		// if ( selected.height() >= 500 ) {
-		// 	$('.selected > img').css({
-		// 		height: "100%"
-		// 	 });
-
-		// }
-
-
-
-		// function resizeImage(){
-
-		// 	var windowWidth = $(window).width();
-		// 	console.log(windowWidth);
-
-		// 	if ( windowWidth < 1030 ) {
-		// 		$('.selected > img').css({
-		// 			'max-height': '100%',
-		// 			width: 'auto'
-		// 		});
-		// 	}
-
-		// 	else {
-
-		// 		$('.selected > img').css({
-		// 			'width': '100%',
-		// 			'max-width': '100%',
-		// 			height: 'auto'
-		// 		});
-		// 	}
-		// }
-
-		// resizeImage();
-
-
-		// $(window).on('resize', function(){
-		// 	resizeImage();
-
-		// });
-
 
 
 

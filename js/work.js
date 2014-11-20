@@ -1,97 +1,55 @@
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	isMobile = true;
+}else{
+	isMobile = false;
+}
+
 	
-	
-	var txt = $('.innertext');
-	txt.hide();
+$(function(){
 
-	// CALCULATE BLOCK SIZE
+	$("article>a").each(function(){
 
-	var block = $(".workblock");
-	var windowWidth = $(window).width();
-	var devideThree = windowWidth / 3;
-	var devideFour = windowWidth / 4;
-	var header = $('.header');
+		var div = $(this);
+		var path = $(this).attr("data-background");
 
+		var img = '<img src="' + path + '">';
 
+		div.animate({opacity:0},0);
 
-	//
-
-	$('.window').on('scroll', function(){
-		header.css({
-			'position' : 'fixed',
-			'top' : '0'
+		$(img).load(function(){
+			div.css({
+				'background': "url(" + path + ")" + "no-repeat 50% 50% scroll",
+			    '-webkit-background-size' : 'cover',
+			    '-moz-background-size' : 'cover',
+			    'background-size' : "cover"
+			})
+			setTimeout(function(){
+				div.animate({opacity:1},1000);
+			}, Math.random()*1000)
 		});
 
 
-	});
+		//hove effect
+		if(!isMobile){
+			$('div', this).hide();
+			$(this).hover(
+				function(){
+					$('div', this).fadeIn(200);
+				},
+				function(){
+					$('div', this).fadeOut(500);
+				}
 
+			);
 
-
-	// PLACE BLOCKS BASED ON WINDOW WIDTH
-
-	placeBlocks();
-
-	function placeBlocks() {
-
-		windowWidth = $(window).width();
-		devideThree = windowWidth / 3;
-		devideFour = windowWidth / 4;
-
-		if ( windowWidth < 1200 ) {
-			block.css({
-				'width': devideThree + 'px', 
-				'height': devideThree + 'px'
-			})
 		}
 
-		else {
-			block.css({
-			'width': devideFour + 'px', 
-			'height': devideFour + 'px'
-			})
-		}
-	}
+	})
 
+});
 
-	// CHANGE SIZE WHEN RESIZE
-
-	$(window).resize( function(){
-		placeBlocks();		
-	});
-
-
-	// ADD IMAGES TO THE BLOCKS
-
-	block.each(function(){
-
-		var path = $(this).attr('data-background');
-		console.log(path);
-
-		$(this).css({
-			'background': "url(" + path + ")" + "no-repeat 50% 50% scroll",
-		    'background-size' : "cover",
-		    '-webkit-background-size' : 'cover',
-		    // 'width': '100%'
-		})
-
-	});
-
-
-	// SHOW INFO ON HOVER
-
-
-	block.each(function(){
-
-		block.hover(function(){
-			var txt = $('.innertext', this);
-			txt.stop().fadeIn(200)
-
-		}, function(){
-			var txt = $('.innertext', this);
-			txt.stop().fadeOut(500)
-		});
-
-
-	});
+	
 
 
 

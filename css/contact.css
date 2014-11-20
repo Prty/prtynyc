@@ -3,29 +3,39 @@ header {
 	/*position: relative;*/
 }
 
+address{
+	font-style: normal;
+}
 
-.topblock {
+#inquiry {
 	max-width: 600px;
 	height: auto;
-	/*background-color: red;*/
 	margin: 190px 0px 90px 200px;
 }
 
 .contactheader {
-	/*margin-left: 200px;*/
 	font-size: 32px;
-	color: #666666;
+	color: #333333;
 	line-height: 38px;
 	margin-bottom: 10px;
-
+	text-transform: uppercase;
 }
 
-.contactcta {
-	font-size: 32px;
-	color: rgba(0,0,0,0.40);
-	line-height: 35px;
+.contactemail {
 	position: relative;
 	right: 59px;
+	font-size: 32px;
+	color: rgb(0,0,0);
+	line-height: 35px;
+	opacity: 0.4;
+	display: block;
+	text-transform: uppercase;
+   	-webkit-transition: opacity 0.5s;
+   	transition: opacity 0.5s;
+  }
+
+.contactemail:hover {
+	opacity: 1.0;
 }
 
 .arrowleftcontact{
@@ -33,86 +43,161 @@ header {
 	top: 6px;
 }
 
-.addresslarge {
-	width: 105px;
-	/*height: auto;*/
-	/*background-color: orange;*/
-	margin-left: 200px;
 
+#locations {
+	width: 100%;
+	padding: 0 44px 0 200px;
+	box-sizing:border-box;
+	overflow: hidden;
+	height: auto;
+	margin-bottom: 100px;
+}
+
+
+
+.acf-map {
+	width: 100%;
+	height: 460px;
+}
+
+
+
+
+.addresslarge {
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 95px;
 }
 
 .addresstitle {
 	font-size: 13px;
-	color: #000000;
+	font-weight: normal;
+	color: #333333;
 	line-height: 16px;
-	margin-bottom: 7px;
+	margin: 0 0 7px 0px;
 	text-transform: uppercase;
 }
 
 .addressrest {
 	font-size: 13px;
-	color: rgba(0,0,0,0.40);
+	color: #666666;
 	line-height: 16px;
-	margin-bottom: 20px;
+	margin: 0 0 20px 0px;
 }
 
-/*#map {
-	background-color: red;
-	height: 300px;
-	width: 100%;
-}*/
 
 .address_largemap {
-	width: 940px;
+	width: 100%;
 	height: 456px;
-	/*margin: 0 auto;*/
-	/*margin-left: 200px;*/
-	margin-bottom: 95px;
+	/*overflow: hidden;*/
 }
 
-
-.addressblock {
-	width: 107px;
-}
 
 .address_small {
-	/*margin-left: 200px;*/
-	width: 440px;
+	box-sizing:border-box;
+	width: 50%;
 	height: auto;
-	/*background-color: orange;*/
+	padding-right:20px;
 	float: left;
-	/*border: 1px solid black;*/
-	margin-bottom: 130px;
+	overflow: hidden;
+}
+
+.address_small:nth-child(odd) {
+	padding-right:0px;
+}
+
+
+.address_smallmap {
+	width: 100%;
+	height: 400px;
 
 }
 
 
-.address_small:last-child {
-	margin-left: 57px;
+
+
+
+
+
+
+/*******************************************
+
+   		FOR TABLET, SMARTPHONE
+
+*******************************************/
+
+
+/* TABLET */
+
+@media(max-width: 768px) {
+
+#inquiry {
+	margin: 190px 0px 90px 100px;
+}
+
+#locations {
+	padding: 0 44px 0 100px;
+}
+
+}
+
+
+/* SMARTPHONE */
+
+@media(max-width: 480px) {
+
+#inquiry {
+	margin: 100px 0px 90px 30px;
+}
+
+.contactheader {
+	font-size: 5.5vw;
+	line-height: 1.2;
+}
+
+.contactemail {
+	right: 0px;
+	font-size: 6vw;
+	line-height: 1.2;
+}
+
+.contactemail img{
+	width: 20px;
+	height: auto;
+	position: relative;
+	top: 3px;
+}
+
+#locations {
+	padding: 0 30px 0 30px;
+}
+
+.addresslarge {
+	margin-bottom: 60px;
+}
+
+.address_largemap {
+	height: 250px;
+}
+
+
+
+.address_small {
+	box-sizing:border-box;
+	width: 100%;
+	padding-right:0px;
+	margin-bottom: 60px;
+
+	float: none;
+	clear: left;
+
 }
 
 .address_smallmap {
-	width: 400px;
-	height: 400px;
+	height: 250px;
 }
 
-.bottomblock {
-	margin-left: 200px;
-	float: left;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
