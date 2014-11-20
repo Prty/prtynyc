@@ -4,6 +4,7 @@ $(function(){
 
 	// google.maps.event.addDomListener(window, 'load', init);
 
+	//acf-maps
 
 	var header = $("header");
 	
@@ -20,23 +21,5 @@ $(function(){
 
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

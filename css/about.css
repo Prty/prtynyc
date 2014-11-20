@@ -3,33 +3,122 @@ header {
 	/*background-color: red;*/
 }
 
+#blurb{
+	position: relative;
+	margin: 190px 90px 30px 200px;
+	max-width: 460px;
+}
+
+#blurb h1{
+	font-size: 32px;
+	color: #333;
+	line-height: 35px;
+	text-transform: uppercase;	
+	font-weight: normal;
+}
+
+#blurb p{
+	font-size: 13px;
+	color: #666;
+	line-height: 20px;
+	margin: 0 0 10px 0;
+}
 
 .members {
-	height: auto;
-	margin: 140px 90px 30px 200px;
-	float: left;
-	max-width: 910px;
 	font-size: 13px;
-	
+	overflow: hidden;
+	padding: 60px 0px 30px 200px;
 }
 
 
 .member {
-	width: 150px;
-	height: 380px;
+	display: block;
+	width: 140px;
+	height: 420px;
 	float: left;
-	margin: 0px 20px 40px 0px; 
+	margin: 0px 20px 80px 0px; 
 }
 
+.member img{
+	width: 100%;
+	height: auto;
+}
 
 .name {
-	margin: 8px 0px 8px 0px;
-
+	color: #333;
+	font-size: 13px;
+	margin: 8px 0px 0px 0px;
+	text-transform: uppercase;
+	font-weight: normal;
 }
 
 .title {
-	margin-bottom: 80px;
+	font-size: 13px;
+	margin: 4px 0 0px 0;
 	line-height: 17px;
-
+	color: #999999;
 }
 
+.members a.twitter {
+	display: block;
+	font-size: 13px;
+	margin: 20px 0 0px 0px;
+	line-height: 0;
+	color: #000;
+	opacity: 0.4;
+}
+.members a:hover.twitter {
+	opacity: 1;
+}
+
+
+/*******************************************
+
+   		FOR TABLET, SMARTPHONE
+
+*******************************************/
+
+
+/* TABLET */
+
+@media(max-width: 768px) {
+
+#blurb{
+	margin: 140px 90px 30px 100px;
+	/*max-width: 600px;*/
+}
+
+
+.members {
+	padding: 60px 0px 30px 100px;
+}
+
+/* SMARTPHONE */
+
+@media(max-width: 480px) {
+#blurb{
+	margin: 100px 30px 0px 30px;
+}
+
+#blurb h1{
+	font-size: 6.0vw;
+	line-height: 1.1;
+}
+
+#blurb p{
+	line-height: 1.2;
+}
+
+.members {
+	padding: 15px 0px 30px 30px;
+}
+
+.member {
+	width: 42.5%;
+	float: left;
+	margin: 0px 20px 0px 0px; 
+}
+
+
+
+}
