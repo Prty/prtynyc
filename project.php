@@ -41,12 +41,18 @@
   <section id="textblock">
 
     <dl class="gravurregular">
+      <?php if(get_field('work_date')): ?>
       <dt>Date</dt>
       <dd><?php the_field('work_date'); ?></dd>
+      <?php endif; ?>
+      <?php if(get_field('work_type')): ?>
       <dt>Type</dt>
       <dd><?php the_field('work_type'); ?></dd>
+      <?php endif; ?>
+      <?php if(get_field('work_client')): ?>
       <dt>Client</dt>
       <dd><?php the_field('work_client'); ?></dd>
+      <?php endif; ?>
     </dl>    
 
     <div class="projectblurb gravurthin">

@@ -290,9 +290,12 @@ a:hover.videocta {
 #credits dl{
 	width: 100%;
 	overflow: hidden;
+	height: 100%;
+	/*min-height: 400px;*/
 	-webkit-columns: 340px 2;
 	-moz-columns: 340px 2;
 	columns: 340px 2;
+    orphans: 3;
 	-webkit-margin-bottom-collapse: separate;
 }
 

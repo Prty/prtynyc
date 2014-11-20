@@ -60,7 +60,7 @@ $(function(){
 
 
 		$('#overlay').hide().fadeIn(500, function(){
-			
+
 			var embed = $(embedCode);
 			embed.addClass("ytvideo");
 
@@ -119,6 +119,17 @@ $(function(){
 		 	var bh = h*1.00;
 		  	$(".ytvideo").height(bh);
 		  	$(".ytvideo").width(bh/720*1280);
+		}
+
+		//credit
+		if($("#credits>dl").height()<300){
+			$("#credits>dl").css({
+				height:300
+			})
+		}else{
+			$("#credits>dl").css({
+				height:'auto'
+			})			
 		}
 
 
