@@ -118,8 +118,8 @@
 
   <?php 
 
-  // $next_post = get_next_post();
-  $next_post = get_previous_post();
+  $next_post = get_next_post();
+  // $next_post = get_previous_post();
 
   if(!empty($next_post)) :?>
 
