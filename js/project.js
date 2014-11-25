@@ -122,6 +122,9 @@ $(function(){
 		  	$(".ytvideo").height(bh);
 		  	$(".ytvideo").width(bh/720*1280);
 		}
+	  	$(".ytvideo").css({
+	  		top: h/2 - $(".ytvideo").height()/2 + $('body').scrollTop()
+	  	})
 
 		//credit
 		if($("#credits>dl").height()<300){
