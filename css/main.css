@@ -325,15 +325,22 @@ footer #offices{
 	float: left;
 	overflow: hidden;
 	margin: 0px 0 30px 0px;
-	width: 380px;
+	width: 450px;
 }
 
 footer #offices>div{
 	float: left;
-	width: 150px;
+	width: 180px;
 }
 
 footer #offices p{
+	line-height: 16px;
+	color: #999999;
+	margin: 8px 0 0 0;
+}
+
+footer #offices p>a{
+	display: block;
 	line-height: 16px;
 	color: #999999;
 	margin: 8px 0 0 0;
