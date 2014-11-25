@@ -67,7 +67,7 @@ $(function(){
 			// $("#overlay").append(embed);
 			$("body").append(embed);
 
-			var closeBtn = "<img src='/wp-content/themes/prtynyc/img/closebutton.png' class='close_btn'>"
+			var closeBtn = "<img src='/wp/wp-content/themes/prtynyc/img/closebutton.png' class='close_btn'>"
 			$("#overlay").append(closeBtn);
 
 			$(document.body).addClass("no_scroll");
