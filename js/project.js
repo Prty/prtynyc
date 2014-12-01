@@ -166,28 +166,39 @@ $(function(){
 	var w = window.innerWidth;
 	var h = window.innerHeight;
 
-	$("#slides").slidesjs({
-		width: w,
-		height: w/1920*1080,
-		navigation:{
-			active: false
-		},
-		pagination:{
-			active: false
-		},
+	if( $("#slides>img").length > 1 ){
 
-		play:{
-			auto: true,
-			effect:'slide',
-			interval: 5000
-		},
+		$("#slides").slidesjs({
+			width: w,
+			height: w/1920*1080,
+			navigation:{
+				active: false
+			},
+			pagination:{
+				active: false
+			},
 
-		effect:{
-			slide:{
-				speed: 1500
+			play:{
+				auto: true,
+				effect:'slide',
+				interval: 5000
+			},
+
+			effect:{
+				slide:{
+					speed: 1500
+				}
 			}
-		}
-	})
+		})
+		
+	}else{
+		$("#slides>img").css({
+			width:'100%',
+			height: 'auto'
+		})
+		$(".slide_arrow").hide();
+	}
+
 
 	// if(isMobile){
 	// 	$(".slide_arrow").hide();
