@@ -118,8 +118,30 @@
 
   <?php 
 
-  $next_post = get_next_post();
-  // $next_post = get_previous_post();
+  $count = 0;
+  $cid = get_the_id();
+
+  $count_posts = wp_count_posts();
+  $postsIDs = array();
+
+
+  query_posts('posts_per_page=10000');
+  if(have_posts()){
+    while(have_posts()){
+      the_post();
+      array_push($postsIDs, get_the_id());
+      if(get_the_id() == $cid){
+        $currentNum = $count;
+      }
+      $count+=1;
+    }
+    if($currentNum==$count_posts->publish-1){
+      $next_post = get_post( $postsIDs[0] );
+    }else{
+      $next_post = get_post( $postsIDs[ $currentNum+1 ] );
+    }
+  }
+
 
   if(!empty($next_post)) :?>
 

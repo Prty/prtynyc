@@ -17,15 +17,17 @@
         <p class="gravurlight">20 Jay Street<br>
           Suite 404<br>
           Brooklyn, NY 11201<br>
-          U.S.
+          U.S.A.
+          <a href="http://www.prty.nyc" title="">prty.nyc</a>
         </p>
       </div>                        
 
 
       <div>
         <h4>Party Tokyo</h4>
-        <p class="gravurlight">18-8 Sarugaku-cho<br>
+        <p class="gravurlight">
           Hillside Terrace F-201<br>
+          18-8 Sarugaku-cho<br>
           Shibuya-ku, Tokyo 150-0033<br>
           Japan
           <a href="http://www.prty.jp" title="">prty.jp</a>
