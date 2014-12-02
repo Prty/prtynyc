@@ -5,7 +5,7 @@
 </section>
 
 <section id="top">
-    <div class="subtitle gravurthin" scrollSpeed="2">WE EXPERIMENT WITH COMBINING,<br> <span class="red"> STORYTELLING &amp; TECHNOLOGY </span><br>TO CREATE EMOTIONAL EXPERIENCES</div>
+    <div class="subtitle gravurthin" scrollSpeed="2">WE EXPERIMENT WITH COMBINING<br> <span class="red"> STORYTELLING &amp; TECHNOLOGY </span><br>TO CREATE EMOTIONAL EXPERIENCES</div>
  </section>
 
 
