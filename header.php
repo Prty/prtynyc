@@ -6,12 +6,16 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta http-equiv="keywords" content="">
-    <meta http-equiv="description" content="">
-    <meta property="og:description" content="">
-    <meta name="page_thumbnail" content="">
-    <meta name="og:image" content="">
+    <meta property="og:title" content="PARTY New York" />
+    <meta property="og:type" content="company" />
+    <meta property="og:image" content="http://prty.nyc/shared/images/ogimage.jpg" />
+    <meta property="og:url" content="http://prty.nyc/shared/images/favicon.ico" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Imagetoolbar" content="no" />
+    <meta name="description" content="PARTY New York. We experiment with combining storytelling &amp; technology to create emotional experiences." />
+    <meta name="keywords" content="PARTY, Qanta Shimizu,Masashi Kawamura,Tom Galle,Jamie Carreiro,Eiji Muroichi" />
 
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/main.css">
 
