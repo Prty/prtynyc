@@ -9,7 +9,7 @@
     <meta property="og:title" content="PARTY New York" />
     <meta property="og:type" content="company" />
     <meta property="og:image" content="http://prty.nyc/shared/images/ogimage.jpg" />
-    <meta property="og:url" content="http://prty.nyc/shared/images/favicon.ico" />
+    <meta property="og:url" content="http://prty.nyc" />
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="Imagetoolbar" content="no" />
     <meta name="description" content="PARTY New York. We experiment with combining storytelling &amp; technology to create emotional experiences." />
